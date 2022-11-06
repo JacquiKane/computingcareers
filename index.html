@@ -1,0 +1,168 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jobs In Computing</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: auto;
+        border: 5px solid beige;
+      }
+
+      .box {
+        flex: 0 0 180px;
+        height: 180px;
+        background-color: bisque;
+        margin: 5px;
+        color: rgb(28, 18, 2);
+        box-sizing: border-box;
+        padding: 2px;
+        margin: 2px;
+        font-size: medium;
+        text-align: center;
+        border-radius: 15px;
+        border: 5px solid burlywood;
+      }
+
+      .box img {
+        display: inline-block;
+        border-radius: 15px;
+      }
+      button {
+        background-color: #990000;
+        color: rgb(239, 208, 162);
+        font-size: larger;
+      }
+      h1 {
+        width: 100%;
+        background-color: rgb(239, 208, 162);
+        color: black;
+        text-align: center;
+        font-size: xx-large;
+      }
+      h2 {
+        width: 100%;
+        background-color: rgb(239, 208, 162);
+        color: black;
+        text-align: center;
+        font-size: large;
+      }
+      .care {
+        margin-right: 3px;
+        font-size: medium;
+        font-weight: bold;
+        word-wrap: break-word;
+      }
+      .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        padding-top: 10px;
+        /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 300px;
+        /* Full width */
+        height: auto;
+        /* height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+        border: 5px solid rgba(0, 0, 0, 0.4);
+      }
+
+      /* Modal Content */
+
+      .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 95%;
+        height: auto;
+      }
+
+      /* The Close Button */
+
+      .close {
+        color: #aaaaaa;
+        float: right;
+        padding-right: 10px;
+        padding-top: 10px;
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .close:hover,
+      .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .highlight {
+        background-color: lightyellow;
+      }
+      .categories {
+        background-color: bisque;
+        width: 100%;
+      }
+    </style>
+    <script src="./lib/jquery-3.6.0.js"></script>
+    <script src="jobs.js"></script>
+  </head>
+  <body>
+    <h1>Jobs, Applied Computing</h1>
+    <p>
+      There are lots of job opportunities in computing, and the categories seem
+      to expand as the technology grows. However, we can divide the job types
+      into 4 distinct categories, below. The jobs listed represent the tip of
+      the iceberg! Mouse over to see what the job is, click to see more
+      information about the skillset. Filter, based on the job categories.
+    </p>
+    <p class="categories">
+      <input
+        type="checkbox"
+        id="software_jobs"
+        name="software_jobs"
+        value="software"
+      />
+      <label for="software_jobs"> Software</label>
+      <input type="checkbox" id="data_jobs" name="data_jobs" value="data" />
+      <label for="data_jobs">Data Management</label>
+      <input type="checkbox" id="cyber_jobs" name="cyber_jobs" value="cyber" />
+      <label for="cyber_jobs">Cybersecurity</label>
+      <input
+        type="checkbox"
+        id="networking_jobs"
+        name="networking_jobs"
+        value="network"
+      />
+      <label for="cyber_jobs">Networking</label>
+    </p>
+
+    <div class="wrapper"></div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
+    </div>
+  </body>
+</html>
