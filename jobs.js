@@ -50,7 +50,7 @@ jobs = [
     do: "front-end web and mobile apps, write APIs, server code, connect  with databases",
     req: ["College Degree", "Industry Credential"],
     image: "images/fullstackdeveloper.png",
-    desc: "Full Stack Developers work on both client-side and server-side software. They develop the Full Stack of a software application meaning Front end development, Back end development, Database, Server, API, and version controlling systems. Hence, the name Full Stack<em>Full Stack</em> Developer.",
+    desc: "Full Stack Developers work on both client-side and server-side software. They develop the Full Stack of a software application meaning Front end development, Back end development, Database, Server, API, and version controlling systems. Hence, the name <em>Full Stack</em> Developer.",
   },
   {
     category: "data",
